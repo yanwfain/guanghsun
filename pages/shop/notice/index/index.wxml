@@ -1,0 +1,130 @@
+<!-- <template name="tpl_list">
+    <navigator url="../detail/detail?id={{item.id}}">
+        <view class="fui-list">
+            <view class="fui-list-media">
+                <image class="round" src="{{item.thumb}}"></image>
+            </view>
+            <view class="fui-list-inner">
+                <view class="row">
+                    <view class="row-text">{{item.title}}</view>
+                </view>
+                <view class="subtitle">{{item.createtime}}</view>
+            </view>
+            <view class="fui-list-angle">
+                <view class="angle"></view>
+            </view>
+        </view>
+    </navigator>
+</template>
+<block>
+    <block wx:if="{{!show}}">
+        <loading>加载中...</loading>
+    </block>
+</block>
+<block>
+    <block wx:if="{{show}}">
+        <view class="fui-page page-shop-notice-detail">
+            <view class="fui-content">
+                <view class="fui-list-group">
+                    <block wx:for="{{list}}">
+                        <template is="tpl_list" data="{{item:item}}"></template>
+                    </block>
+                </view>
+            </view>
+            <block>
+                <block wx:if="{{list.length<=0&&!loading}}">
+                    <view class="content-empty">
+                        <icon size="80" type="search"></icon>
+                        <view>暂时没有任何公告</view>
+                    </view>
+                </block>
+            </block>
+        </view>
+    </block>
+</block> -->
+
+<!-- <view class="page-body" style="margin-top: {{ pageTopData.height * 2 + 30 }}px">
+  <page-top show-back="{{ true }}" page-top-data="{{ pageTopData }}" />
+  <view class="bg">
+    <image src="../../imgs/custom-bg.jpg" />
+  </view>
+  <view class="box">
+    <view class="title-box">
+      <view class="title active">私人定制</view>
+      <view class="title">团队定制</view>
+    </view>
+    <view class="content">
+      <view class="">
+        <view class="input-item">
+          <view class="city-box">
+            <view class="city left">
+              <text>北京</text>
+            </view>
+            <view class="center-icon">
+              <image src="../../imgs/cutover.png" />
+            </view>
+            <view class="city right">
+              <text class="placeholder">请选择</text>
+            </view>
+          </view>
+        </view>
+        <view class="input-item">
+          <view class="weui-flex">
+            <view class="date" bindtap="onSelectDateTap" data-date="">
+        
+              <view>{{mydata.month}}月{{mydata.datenum}}日<text class="day">{{data_zhou}}</text></view>
+            </view>
+            <view class="date-center">4天</view>
+            <view class="date" bindtap="onSelectDateTapend" data-date="">
+               <view>{{mydataend.month}}月{{mydataend.datenum}}日<text class="day">{{data_zhouend}}</text></view>
+            </view>
+          </view>
+        </view>
+        <view class="input-item">
+          <view class="weui-flex">
+            <view class="date">
+              <view>1成人 0儿童 0婴儿</view>
+            </view>
+          </view>
+        </view>
+        <view class="input-item">
+          <view class="city-box">
+            <view class="city date left">
+              <text>人均预算</text>
+            </view>
+            <view class="city date left" style="margin-left:50rpx;">
+              <text class="placeholder">无明确预算</text>
+            </view>
+          </view>
+        </view>
+        <button class="weui-btn search-btn" type="default" bindtap="onSubmit">获取专属方案</button>
+      </view>
+    </view>
+  </view>
+</view> -->
+<view class="bgc_img">
+  <image src="https://gs.baike360.cn/attachment/images/2.png"></image>
+</view>
+<view class="center-box">
+  <view class="txt_tit">定制旅行，想怎么玩就怎么玩</view>
+  <view class="txt_cont">专业旅行定制师一对一服务，7×24小时出行保障</view>
+  <view class="cont_tit">
+    目的地
+  </view>
+  <input placeholder="请填写目的地" class="inp_txt" bindinput="inpu_ation" value="{{destination}}" />
+  <view class="cont_tit">
+    姓名
+  </view>
+  <input placeholder="请填写你的姓名" class="inp_txt" bindinput="inpu_name" value="{{name_tit}}" />
+  <view class="cont_tit">
+    手机号
+  </view>
+  <!-- <view class="fixd"> -->
+  <input placeholder="请填写手机号码" class="inp_txt" bindinput="inpu_phone" value="{{phone_tit}}" />
+  <!-- <button class="zidong_sub" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber" >自动获取</button>  -->
+  <!-- </view> -->
+  <view class="submit" bindtap="submit">
+    提交需求
+  </view>
+
+</view>

@@ -1,0 +1,21 @@
+<view class="top">
+  <image src=""></image>
+  <view class="cont_txt">
+    <view class="top_title">
+      提交成功
+    </view>
+    <view class="txt_txt">
+      我们已收到您的咨询
+    </view>
+    <view class="txt_txt">
+      10分钟之内将有广顺国旅“爱上自由行”专业私人定制客服<text class="tit_txt">添加您的微信，请注意通过哦。</text> 
+    </view> 
+    <view class="tit_txt">
+     
+    </view>
+  </view>
+</view>
+<view class="cenete_img">
+  <image src="https://gs.baike360.cn/attachment/images/1.png"></image>
+</view>
+<view class="notiogr_go" bindtap="go_page">返回首页</view>
